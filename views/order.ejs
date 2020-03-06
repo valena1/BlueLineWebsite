@@ -1,0 +1,48 @@
+<%- include('partials/header') -%>
+<body>
+    <%- include('partials/navigation') -%> 
+    <main>
+
+            <!-- short text about the cookies -->
+            <h1><br>SUGAR COOKIES</h1>
+            <div class="ordertop">
+                <p class="description">Make your next party and event a little sweeter with our delicious sugar cookies personalized just for you.
+                Choose your personal cookies and we'll bake them to perfection!</p>
+            <p class="description">Please complete the following form so we can respond back to you within 24 hours to discuss details and complete your order.</p>
+            </div>
+        
+            <!-- form to submit order -->
+            <div class="formcontainer">
+            <h1>- ORDER CUSTOM SUGAR COOKIES -</h1>
+            <div class="form">
+            <form id="form" method="POST" action="/followup">
+                <!-- Name -->
+                <label for="firstform">Name<br></label>
+                    <input type="text" name="first" id="first" placeholder="FIRST NAME" required aria-required="true" value="<%= order %>">
+                <label for="lastform"></label>
+                        <input type="text" name="last" id="last" placeholder="LAST NAME" required aria-required="true" value="<%= order %>"><br><br><br>
+                <!-- Email Address -->
+        
+                <label for="emailform">Email Address<br></label>
+                            <input type="text" name="email" id="email" placeholder="EMAIL ADDRESS" required aria-required="true" value="<%= order %>"><br><br>
+                <!-- Phone Number -->
+                Phone Number<br>
+                <label for="phone1"></label>
+                <input type="tel" name="phone" id="phone" aria-label="Phone Number" size="10" pattern="[0-9]{10}" maxlength="10" placeholder="(XXX)-XXX-XXXX" required aria-required="true" value="<%= order %>"><br><br>
+                <!-- Date -->
+                <label for="date">When Do You Need Your Cookies By?<br></label>
+                                <input type="date" name="date" id="date" required aria-required="true" value="<%= order %>"><br><br>
+                <!-- Message for cookies request -->
+                <label for="message">What Can We Make For You?<br></label>
+                                    <input id="uploadImage" type="file" accept="image/*" name="image" /><br><br>
+                <textarea name="message" id="message" required aria-required="true" value="<%= order %>"></textarea><br><br>
+                <div class="submitcontainer"><input type="submit" value="submit"></div>
+        
+            </form>
+            </div>
+            </div>
+        
+        </main>
+    <%- include('partials/footer') -%>
+</body>
+</html>

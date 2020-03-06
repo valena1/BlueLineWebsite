@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c79e3cd3-3135-4f68-8455-a47296288849" name="UNCC" url="http://webpages.uncc.edu/vnguye34/WEBSITE">
+        <fileTransfer host="webpages.uncc.edu" port="22" rootFolder="/public_html/" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

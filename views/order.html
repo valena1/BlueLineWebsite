@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order - Blue Line Cookies Designs</title>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="fotorama/fotorama.js"></script>
+    <script src="index.js"></script>
+
+
+</head>
+<body>
+<header><div role="banner">
+    <!-- header for the order page -->
+    <img id="logo" src="logo.jpg" alt="logo">
+    <div class="container">
+        <ul id="nav">
+            <li><a href="http://webpages.uncc.edu/vnguye34/WEBSITE/index.html">HOME</a></li>
+            <li class="dropdown">
+                <a class="cookiesbtn">COOKIES &#x2304;</a>
+                <div class="dropdown-content">
+                    <a href="http://webpages.uncc.edu/vnguye34/WEBSITE/order.html">ORDER</a>
+                    <a href="http://webpages.uncc.edu/vnguye34/WEBSITE/photos.html">PHOTOS</a>
+                </div>
+            <li><a href="http://webpages.uncc.edu/vnguye34/WEBSITE/faq.html">FAQ</a></li>
+            <li><a href="http://webpages.uncc.edu/vnguye34/WEBSITE/contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+</div>
+</header>
+
+<main>
+    <!-- short text about the cookies -->
+    <h1><br>SUGAR COOKIES</h1>
+    <div class="ordertop">
+        <p class="description">Make your next party and event a little sweeter with our delicious sugar cookies personalized just for you.
+        Choose your personal cookies and we'll bake them to perfection!</p>
+    <p class="description">Please complete the following form so we can respond back to you within 24 hours to discuss details and complete your order.</p>
+    </div>
+
+    <!-- form to submit order -->
+    <div class="formcontainer">
+    <h1>- ORDER CUSTOM SUGAR COOKIES -</h1>
+    <div class="form">
+    <form id="form" action="https://webpages.uncc.edu/vnguye34/WEBSITE/followup.html" method="post" enctype="multipart/form-data">
+        <!-- Name -->
+        <label for="firstform">Name<br></label>
+            <input type="text" name="firstform" id="firstform" placeholder="FIRST NAME" required aria-required="true">
+        <label for="lastform"></label>
+                <input type="text" name="lastform" id="lastform" placeholder="LAST NAME" required aria-required="true"><br><br><br>
+        <!-- Email Address -->
+
+        <label for="emailform">Email Address<br></label>
+                    <input type="text" name="emailform" id="emailform" placeholder="EMAIL ADDRESS" required aria-required="true"><br><br>
+        <!-- Phone Number -->
+        Phone Number<br>
+        <label for="phone1"></label>
+        <input type="tel" name="phone" id="phone1" aria-label="Area Code" size="3" pattern="[0-9]{3}" maxlength="3" placeholder="(XXX)" required aria-required="true">
+        <label for="phone2"></label>
+        <input type="tel" name="phone" id="phone2" aria-label="Exchange Code" size="3" pattern="[0-9]{3}" maxlength="3" placeholder="XXX" required aria-required="true">
+        <label for="phone3"></label>
+        <input type="tel" name="phone" id="phone3" aria-label="Line Number" size="4" pattern="[0-9]{4}" maxlength="4" placeholder="XXXX" required aria-required="true"><br><br><br>
+        <!-- Date -->
+        <label for="date">When Do You Need Your Cookies By?<br></label>
+                        <input type="date" name="date" id="date" required aria-required="true"><br><br>
+        <!-- Message for cookies request -->
+        <label for="message">What Can We Make For You?<br></label>
+                            <input id="uploadImage" type="file" accept="image/*" name="image" /><br><br>
+        <textarea name="message" id="message" required aria-required="true"></textarea><br><br>
+            <div class="submitcontainer"><input type="submit" value="SUBMIT ORDER"></div>
+
+    </form>
+    </div>
+    </div>
+</main>
+
+<!-- footer for the order page -->
+<footer><div role="contentinfo">
+    <div class="footercontainer">
+        <h1>STAY CONNECTED</h1>
+        <div class="left">
+            <p class="subscribe">SUBSCRIBE</p><br><br>
+            <label for="first"></label>
+            <input type="text" name="first" id="first" placeholder="FIRST NAME" required aria-required="true">
+            <label for="last"></label>
+            <input type="text" name="last" id="last" placeholder="LAST NAME" required aria-required="true"><br>
+            <label for="email"></label>
+            <input type="text" name="email" id="email" placeholder="EMAIL ADDRESS" required aria-required="true"><br>
+            <button class="subscribe">SUBSCRIBE</button>
+        </div>
+        <div class="right">
+            <p class="subscribe">CONNECT WITH US</p><br><br>
+            <a href="https://www.facebook.com/bluelinecookiedesign/">FACEBOOK</a><br><br>
+            <a href="mailto:cookieladymandi@gmail.com">EMAIL US</a>
+            <br><br><br><br><br>
+            <p>© Blue Line Cookies Designs</p>
+        </div>
+    </div>
+</div>
+</footer>
+
+</body>
+</html>

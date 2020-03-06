@@ -1,0 +1,30 @@
+{"questions":[
+  {
+    "ask":"How far in advance should I place my order?",
+    "answer":"Since all orders are baked just for you, orders must be placed at least 48 hours in advance."
+  },
+  {
+    "ask":"Pricing on the cookies?",
+    "answer":"Cookies start at $24 a dozen. Prices can go up depending on size, detail, etc. Specific pricing information will be provided in the follow up email after orders are placed."
+  },
+  {
+    "ask":"Can my order be delivered?",
+    "answer":"Currently, cookies are not being delivered or shipped. Local pickups only."
+  },
+  {
+    "ask":"When will my order be ready?",
+    "answer":"After your order has been processed and confirmed, your cookies will be ready within 48-72 hours."
+  },
+  {
+    "ask":"How do I pay for my order?",
+    "answer":"All orders must be paid via PayPal before in-store pickup."
+  },
+  {
+    "ask":"Can I modify/cancel my order?",
+    "answer":"All orders can be modified or canceled within at least 24 hours. Modifications/cancellations must be done over the phone and applicable refunds will be issued in the original form of payment. Since our cookies are made just for you, modifications/cancellations are not able to be made within less than 24 hours."
+  },
+  {
+    "ask":"Do you offer gluten-free, sugar-free, or vegan cookies?",
+    "answer":"Unfortunately, we currently do not. However, subscribe to our email newsletter for future cookie options!"
+  }
+]}

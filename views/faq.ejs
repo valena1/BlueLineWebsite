@@ -1,0 +1,19 @@
+<%- include('partials/header') -%>
+<body>
+    <%- include('partials/navigation') -%> 
+    <main>
+            <!-- content for faq and answers -->
+            <h1><br>FAQ | Frequently Asked Questions<br></h1>
+        
+            <div id="faqcontainer">
+                    <% for(var i = 0; i < faq.length; i++) { %>
+                        <h3><%= faq[i].ask %></h3>
+                        <p class="description"><%= faq[i].answer %></p><br><br>
+                        <% } %> 
+            <h3><b>STILL HAVE QUESTIONS? CLICK
+                <i><u><a href="/contact">HERE</a></u></i> TO CONTACT US.</b></h3><br><br>
+            </div>
+    </main>
+    <%- include('partials/footer') -%>
+</body>
+</html>

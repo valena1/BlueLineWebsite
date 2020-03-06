@@ -1,0 +1,28 @@
+<%- include('partials/header') -%>
+<body>
+    <%- include('partials/navigation') -%>
+        <main>
+            <!-- form for questions, comments and concerns -->
+            <div class="contactcontainer">
+                    <h1><br><b>QUESTIONS, COMMENTS, OR CONCERNS?</b></h1>
+                    <p class="contact">Send us an email and we'll get back to you as soon as possible!</p>
+                    <div class="contactform">
+                        <form id="contactform" action="/followup1" method="POST">
+                            <label for="firstcontact">Name<br></label>
+                            <input type="text" name="first" id="first" placeholder="FIRST NAME" required aria-required="true">
+                            <label for="lastcontact"></label>
+                            <input type="text" name="last" id="last" placeholder="LAST NAME" required aria-required="true"><br><br><br>
+                                <label for="emailcontact">Email Address<br></label>
+                                <input type="text" name="email" id="email" placeholder="EMAIL ADDRESS" required aria-required="true"><br><br>
+                            <label for="phone1">Phone Number<br></label>
+                            <input type="tel" name="phone" id="phone" size="10" pattern="[0-9]{10}" maxlength="10" placeholder="(XXX)-XXX-XXXX"><br><br>
+                            <label for="message">Message<br><br></label>
+                            <textarea id="message" rows="5" name="message" placeholder="ENTER MESSAGE HERE" required aria-required="true"></textarea><br><br><br>
+                            <div class="submitcontainer"><input type="submit" value="SUBMIT"></div>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        <%- include('partials/footer') -%>
+</body>
+</html>

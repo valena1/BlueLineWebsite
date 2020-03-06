@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Blue Line Cookies Designs</title>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="fotorama/fotorama.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+<!-- header/nav bar for contact page -->
+<header><div role="banner">
+    <img id="logo" src="logo.jpg" alt="logo">
+    <div class="container">
+        <ul id="nav">
+            <li><a href="http://webpages.uncc.edu/vnguye34/WEBSITE/index.html">HOME</a></li>
+            <li class="dropdown">
+                <a class="cookiesbtn">COOKIES &#x2304;</a>
+                <div class="dropdown-content">
+                    <a href="http://webpages.uncc.edu/vnguye34/WEBSITE/order.html">ORDER</a>
+                    <a href="http://webpages.uncc.edu/vnguye34/WEBSITE/photos.html">PHOTOS</a>
+                </div>
+            <li><a href="http://webpages.uncc.edu/vnguye34/WEBSITE/faq.html">FAQ</a></li>
+            <li><a href="http://webpages.uncc.edu/vnguye34/WEBSITE/contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+</div>
+</header>
+
+<main>
+    <!-- form for questions, comments and concerns -->
+    <div class="contactcontainer">
+        <h1><br><b>QUESTIONS, COMMENTS, OR CONCERNS?</b></h1>
+        <p class="contact">Send us an email and we'll get back to you as soon as possible!</p>
+        <div class="contactform">
+            <form id="contactform" action="http://webpages.uncc.edu/vnguye34/WEBSITE/followup1.html" method="post" enctype="text/plain">
+                <label for="firstcontact">Name<br></label>
+                <input type="text" name="first" id="firstcontact" placeholder="FIRST NAME" required aria-required="true">
+                <label for="lastcontact"></label>
+                <input type="text" name="last" id="lastcontact" placeholder="LAST NAME" required aria-required="true"><br><br><br>
+                    <label for="emailcontact">Email Address<br></label>
+                    <input type="text" name="email" id="emailcontact" placeholder="EMAIL ADDRESS" required aria-required="true"><br><br>
+                <label for="phone1">Phone Number<br></label>
+                <input type="tel" name="phone" id="phone1" size="3" pattern="[0-9]{3}" maxlength="3" placeholder="(XXX)">
+                <label for="phone2"></label>
+                <input type="tel" name="phone" id="phone2" size="3" pattern="[0-9]{3}" maxlength="3" placeholder="XXX">
+                <label for="phone3"></label>
+                <input type="tel" name="phone" id="phone3" size="4" pattern="[0-9]{4}" maxlength="4" placeholder="XXXX"><br><br><br>
+                <label for="comment">Message<br><br></label>
+                <textarea id="comment" rows="5" name="comment" form="contactform" placeholder="ENTER MESSAGE HERE" required aria-required="true"></textarea><br><br><br>
+                <div class="submitcontainer"><input type="submit" value="SUBMIT"></div>
+            </form>
+        </div>
+    </div>
+</main>
+
+<!-- footer for contact page -->
+<footer><div role="contentinfo">
+    <div class="footercontainer">
+        <h1>STAY CONNECTED</h1>
+        <div class="left">
+            <p class="subscribe">SUBSCRIBE</p><br><br>
+            <label for="first"></label>
+            <input type="text" name="first" id="first" placeholder="FIRST NAME">
+            <label for="last"></label>
+            <input type="text" name="last" id="last" placeholder="LAST NAME"><br>
+            <label for="email"></label>
+            <input type="text" name="email" id="email" placeholder="EMAIL ADDRESS"><br>
+            <button class="subscribe">SUBSCRIBE</button>
+        </div>
+        <div class="right">
+            <p class="subscribe">CONNECT WITH US</p><br><br>
+            <a href="https://www.facebook.com/bluelinecookiedesign/">FACEBOOK</a><br><br>
+            <a href="mailto:cookieladymandi@gmail.com">EMAIL US</a>
+            <br><br><br><br><br>
+            <p>© Blue Line Cookies Designs</p>
+        </div>
+    </div>
+</div>
+</footer>
+
+</body>
+</html>
